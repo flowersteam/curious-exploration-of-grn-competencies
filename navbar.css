@@ -1,0 +1,123 @@
+
+/* Style the top navigation bar */
+
+    .topnav{
+        display: inline;
+        position: fixed;
+        right: 0;
+        top: 0; 
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        margin: 0px;
+        /* padding-right: 50px; */
+        /* border-bottom-color: #000;
+        border-bottom-width: 1px;
+        border-bottom-style: solid; */
+    }
+      
+    body{
+        margin-top: 100px;
+      }
+    
+
+    /* Logo */
+    .topnav a.logo {
+        float: left;
+        display: block;
+        color: #000;
+      }
+    
+    img.logo_img{
+        width: 50px;
+        float: left;
+        display: inline-block;
+      }
+
+    a.logo:hover {
+        background-color: #ddd;
+      }
+    
+    
+    
+    /* Menu */
+  .topnav a {
+    overflow: hidden;
+    float: right;
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.5em;
+  }
+    
+  .topnav span {
+    overflow: hidden;
+    float: right;
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.5em;
+  }
+  
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+  }
+
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    font-weight: bold;
+    text-decoration-line: underline;
+    text-decoration-color: #04AA6D;
+    text-decoration-thickness: 4px;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+    /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+.topnav a {
+    display: none;
+}
+.topnav span {
+    display: none;
+}
+.topnav a.icon {
+  float: right;
+  display: block;
+}
+.topnav a.icon:hover {
+  background-color: rgb(255, 255, 255);
+  /* color: black; */
+}
+.topnav{
+  padding-right: 0px;
+}
+}
+  
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) { 
+.topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+    
+/* .topnav.responsive{
+  padding-top: 40px;
+} */
+    
+.topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+}
+}
