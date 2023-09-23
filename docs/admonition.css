@@ -1,0 +1,63 @@
+
+/* Style the admonition notes */
+/* Inspired from https://sphinx-book-theme.readthedocs.io/en/latest/reference/kitchen-sink/admonitions.html */
+
+.admonition {
+    position: relative;
+    margin: 1em 0;
+    padding: 0 .6rem .8rem;
+    border-radius: .25rem;
+    box-shadow: 0 .2rem .5rem #d8d8d8,0 0 .0625rem #d8d8d8;
+}
+
+.admonition-title {
+    padding: .4rem .6rem .4rem 2rem;
+    margin: 0 -.6rem;
+    position: relative;
+    font-weight: bold;
+}
+
+.admonition>p:last-child {
+    margin-bottom: 0;
+}
+
+.admonition>.admonition-title:before {
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: .1;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.admonition>.admonition-title:after {
+    content: "";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    height: 1rem;
+    left: .5rem;
+    opacity: 1;
+    position: absolute;
+    width: 1rem;
+}
+
+.admonition.hint,.admonition.seealso { 
+    border-left: .2rem solid #28a745;
+    background-color: "white"; 
+}
+
+.admonition.hint>.admonition-title:before, .admonition.seealso>.admonition-title:before{
+    background-color: #28a745;
+}
+
+.admonition.hint>.admonition-title:after {
+    color: #28a745;
+    content: "\f0eb";
+}
+
+.admonition.seealso>.admonition-title:after {
+    color: #28a745;
+    content: "\f064";
+}
