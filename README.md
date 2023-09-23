@@ -37,4 +37,26 @@ The paper and tutorials are written in the form of jupyter notebooks and are pla
    ├── paper.ipynb                  # paper notebook
    ├── tuto1.ipynb                  # tutorial 1 notebook
    └── tuto2.ipynb                  # tutorial 2 notebook
+```     
+
+### Re-generating the paper plots
+
+Before trying to regenerate the paper plots please unzip the `experiment_data_statistics.zip` and `evaluation_data_examples.zip` files in the `experimental_campaign/analysis/` folder.
+
+Then you can just run the `paper.ipynb` notebook.
+
+
+### Running the tutorials
+
+As some of the tutorial cells might take considerable amount of time to execute the tutorial notebooks come with an option to load already executed data,  which is much faster. This functionality can be used as a initiation to the tutorials, when running them for the first time.
+
+```python
+nb_mode = "load" #@param ["run", "load"]
 ```
+If you want to regenerate all the data and run the totorial examples set the `nb_mode` to
+```python
+nb_mode = "run" #@param ["run", "load"]
+```
+
+## Contact 
+If you have any questions about the notebooks or the paper feel free to contact me at the email: mayalen.etcheverry@inria.fr
