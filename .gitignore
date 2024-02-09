@@ -1,3 +1,8 @@
+# custom
+experimental_campaign/analysis/evaluation_data_examples.pickle
+experimental_campaign/analysis/experiment_data_statistics.pickle
+notebooks/data/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
