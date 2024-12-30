@@ -1,6 +1,6 @@
 # AI-driven Automated Discovery Tools Reveal Diverse Behavioral Competencies of Biological Networks
 
-This repository hosts the source code to reproduce the results presented in the paper [AI-driven Automated Discovery Tools Reveal Diverse Behavioral Competencies of Biological Networks](https://osf.io/s6thq/):
+This repository hosts the source code to reproduce the results presented in the paper [AI-driven Automated Discovery Tools Reveal Diverse Behavioral Competencies of Biological Networks](https://elifesciences.org/reviewed-preprints/92683):
 
 - Paper: [docs](https://developmentalsystems.org/curious-exploration-of-grn-competencies/index.html), [notebook](notebooks/paper.ipynb)
 - Tutorial 1: [docs](https://developmentalsystems.org/curious-exploration-of-grn-competencies/tuto1.html), [notebook](notebooks/tuto1.ipynb)
@@ -146,5 +146,13 @@ python gather_evaluation_data_examples.py #robustness tests examples for Figure 
 
 These final steps output `pickle` files that are used to run the paper notebook. 
 
-## Contact 
-If you have any questions about the notebooks or the paper feel free to contact me at the email: mayalen.etcheverry@inria.fr
+## Citation 
+```
+ @article{Etcheverry_2024, 
+ title={AI-driven Automated Discovery Tools Reveal Diverse Behavioral Competencies of Biological Networks}, 
+ url={http://dx.doi.org/10.7554/eLife.92683.3}, 
+ DOI={10.7554/elife.92683.3}, 
+ publisher={eLife Sciences Publications, Ltd}, 
+ author={Etcheverry, Mayalen and Moulin-Frier, Clément and Oudeyer, Pierre-Yves and Levin, Michael}, 
+ year={2024}}
+ ```
