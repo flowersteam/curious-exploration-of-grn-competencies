@@ -103,7 +103,7 @@ img,video,iframe {
 
 .colab-root {
     display: inline-block;
-    background: rgba(230, 230, 230, 0.75);
+    background: rgba(255, 255, 255, 0.75);
     padding: 2px 8px;
     border-radius: 4px;
     font-size: 10px!important;
@@ -132,6 +132,17 @@ span.colab-span {
     background-position: center right;
     display: inline-block;
     padding-right: 24px;
+}
+
+span.elife-span {
+    background-image: url(elife.svg);
+    vertical-align: bottom;
+    background-repeat: no-repeat;
+    background-size: 60px;
+    background-position: center;
+    padding-left: 70px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 #arxiv {
